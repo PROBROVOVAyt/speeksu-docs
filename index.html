@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="/public/favicon.png" />
+    <link rel="apple-touch-startup-image" href="/public/favicon.png" />
+    <title>Speeksu docs</title>
+    <link rel="shortcut icon" href="/public/favicon.png" type="image/x-icon" />
+    <script type="text/javascript" src="/static/js/spaghetti.js"></script>
+    <script type="text/javascript" src="/static/js/menu.js"></script>
+    <script type="text/javascript" src="/static/js/lang.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="/static/css/main.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/ce4e4798b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="bg-slate-200 dark:bg-slate-900 flex min-h-screen text-slate-600 dark:text-slate-200"
+  >
+    <!-- nav -->
+    <nav
+      id="menu"
+      class="w-[300px] border-r-[1px] dark:border-slate-700 border-slate-400"
+    >
+      <div class="h-[56px] px-[16px] flex">
+        <a href="/" class="flex gap-[4px] self-center">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="self-center size-[48px] text-slate-950 dark:text-slate-200"
+          >
+            <path
+              d="M9.17343 10.4213C9.17343 11.424 8.8161 12.1866 8.10143 12.7093C7.39743 13.232 6.51743 13.4933 5.46143 13.4933C4.01077 13.4933 2.8961 13.2106 2.11743 12.6453L2.34143 10.5973L3.30143 10.6933L3.23743 12.0053C3.58943 12.1866 3.94143 12.3093 4.29343 12.3733C4.64543 12.4373 5.01343 12.4693 5.39743 12.4693C6.0801 12.4693 6.66677 12.3253 7.15743 12.0373C7.65877 11.7386 7.90943 11.2373 7.90943 10.5333C7.90943 9.74398 7.63743 9.23198 7.09343 8.99732C6.54943 8.75198 5.95743 8.55465 5.31743 8.40532C4.82676 8.29865 4.34143 8.16532 3.86143 8.00532C3.38143 7.83465 2.98143 7.57332 2.66143 7.22132C2.34143 6.85865 2.18143 6.33598 2.18143 5.65332C2.18143 4.67198 2.50676 3.94665 3.15743 3.47732C3.81876 3.00798 4.59743 2.77332 5.49343 2.77332C6.06943 2.77332 6.65076 2.85332 7.23743 3.01332C7.8241 3.17332 8.28276 3.38132 8.61343 3.63732L8.70943 5.70132L7.74943 5.79732L7.58943 4.24532C7.25877 4.07465 6.92276 3.96265 6.58143 3.90932C6.2401 3.84532 5.91476 3.81332 5.60543 3.81332C4.95476 3.81332 4.42676 3.96265 4.02143 4.26132C3.62676 4.54932 3.42943 4.97065 3.42943 5.52532C3.42943 6.17598 3.66943 6.61332 4.14943 6.83732C4.62943 7.06132 5.16276 7.24265 5.74943 7.38132C6.21876 7.48798 6.71477 7.62665 7.23743 7.79732C7.77077 7.95732 8.2241 8.23998 8.59743 8.64532C8.98143 9.03998 9.17343 9.63198 9.17343 10.4213Z"
+              fill="currentColor"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.90573 6.24805C10.2864 7.66967 10.9173 9.65842 10.6084 11.6159L9.94988 11.512C10.2261 9.7618 9.662 7.98362 8.42749 6.71252L8.90573 6.24805Z"
+              fill="currentColor"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.99367 5.23016C11.5108 7.07717 12.2593 9.437 12.0842 11.8208L11.4193 11.772C11.5819 9.55887 10.887 7.36804 9.47852 5.65331L9.99367 5.23016Z"
+              fill="currentColor"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.075 4.20703C12.7274 6.47859 13.5985 9.22481 13.5575 12.0335L12.8909 12.0238C12.9298 9.35932 12.1035 6.75412 10.5359 4.5992L11.075 4.20703Z"
+              fill="currentColor"
+            />
+          </svg>
+
+          <h3
+            class="text-[24px] font-semibold self-center text-slate-950 dark:text-slate-200"
+          >
+            Speeksu
+          </h3>
+        </a>
+      </div>
+      <div class="flex flex-col px-[24px] pt-[16px] w-full gap-[16px]">
+        <div class="flex flex-col gap-[8px] w-full">
+          <p
+            class="text-[20px] font-semibold text-slate-950 dark:text-slate-200"
+          >
+            Ресурсы
+          </p>
+          <ul class="ml-[8px] border-l w-full flex flex-col gap-[4px]">
+            <li
+              class="flex ml-[8px] dark:bg-slate-800 pl-[8px] bg-slate-300 w-full rounded-[8px] h-[32px]"
+            >
+              <a
+                class="dark:text-slate-200 text-slate-900 self-center font-medium"
+                href="/"
+                >Введение</a
+              >
+            </li>
+            <li class="flex ml-[8px] pl-[8px] w-full rounded-[8px]">
+              <a
+                class="dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-all text-slate-600 self-center font-medium"
+                href="/"
+                >Быстрый старт</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-[8px] w-full">
+          <p
+            class="text-[20px] font-semibold text-slate-950 dark:text-slate-200"
+          >
+            Руководство
+          </p>
+          <ul class="ml-[8px] border-l w-full flex flex-col gap-[4px]">
+            <li class="flex ml-[8px] pl-[8px] w-full rounded-[8px] h-[32px]">
+              <a
+                class="hover:text-slate-900 transition-all dark:text-slate-400 dark:hover:text-slate-200 text-slate-600 self-center font-medium"
+                href="/"
+                >Шрифты</a
+              >
+            </li>
+            <li class="flex ml-[8px] pl-[8px] w-full rounded-[8px]">
+              <a
+                class="hover:text-slate-900 transition-all dark:text-slate-400 dark:hover:text-slate-200 text-slate-600 self-center font-medium"
+                href="/"
+                >Иконки</a
+              >
+            </li>
+            <li class="flex ml-[8px] pl-[8px] w-full rounded-[8px]">
+              <a
+                class="hover:text-slate-900 transition-all dark:text-slate-400 dark:hover:text-slate-200 text-slate-600 self-center font-medium"
+                href="/"
+                >TailwindCSS</a
+              >
+            </li>
+            <li class="flex ml-[8px] pl-[8px] w-full rounded-[8px]">
+              <a
+                class="hover:text-slate-900 transition-all dark:text-slate-400 dark:hover:text-slate-200 text-slate-600 self-center font-medium"
+                href="/"
+                >Speeksu API</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- content -->
+    <main class="w-full h-full">
+      <!-- nav -->
+      <nav
+        class="border-b-[1px] text-slate-600 dark:text-slate-400 dark:border-slate-700 border-slate-400 h-[56px] px-[16px] flex items-center justify-between gap-[16px]"
+      >
+        <div id="menu-btn" class="self-center">
+          <button
+            id="menu-btn-icon"
+            class="cursor-pointer text-[20px] text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-slate-200 transition-all"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex md:gap-[4px] md:self-center">
+          <p class="text-[20px] font-medium">Руководство</p>
+          <span class="text-[20px] font-medium">></span>
+          <p class="text-[20px] font-medium">Введение</p>
+        </div>
+        <div class="flex items-center gap-[16px] ml-auto">
+          <div class="sm:flex sm:gap-[8px] hidden">
+            <a
+              href=""
+              class="text-[16px] font-medium hover:text-slate-950 dark:hover:text-slate-200 transition-all"
+              >GitHub</a
+            >
+            <a
+              href=""
+              class="text-[16px] font-medium hover:text-slate-950 dark:hover:text-slate-200 transition-all"
+              >Поддержка</a
+            >
+          </div>
+
+          <span
+            class="hidden sm:block sm:w-full sm:border sm:boder-slate-400 sm:dark:border-slate-700 sm:border-slate-600"
+          ></span>
+          <div class="flex gap-[16px]">
+            <button
+              id="theme-btn"
+              class="cursor-pointer text-[16px] dark:text-slate-400 text-slate-600 self-center hover:text-slate-950 dark:hover:text-slate-200 transition-all"
+            >
+              <i id="theme-icon" class="fa-solid fa-sun"></i>
+            </button>
+            <button
+              class="cursor-pointer text-[16px] dark:text-slate-400 flex gap-[4px] font-medium hover:text-slate-950 dark:hover:text-slate-200 transition-all"
+            >
+              RU <i class="fa-solid fa-chevron-down self-center"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main content -->
+      <div class="m-auto max-w-[1000px] pt-[48px]">
+        <!-- Блок начало -->
+        <div class="p-[8px] flex flex-col gap-[8px]">
+          <h1
+            class="md:text-[40px] text-[32px] font-semibold text-slate-950 dark:text-slate-200"
+          >
+            Документация Speeksu
+          </h1>
+          <p
+            class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+          >
+            Speeksu — современный мессенджер для общения в реальном времени.
+            Фронтенд проекта имеет открытый исходный код и предоставляет
+            возможности для личного и группового общения, обмена файлами и
+            создания тематических чатов.
+          </p>
+          <div class="flex gap-[8px] items-stretch">
+            <a
+              href=""
+              class="md:text-[20px] text-[18px] transition-all self-center text-center min-w-[96px] min-h-[36px] rounded-full px-[16px] py-[4px] bg-slate-300 hover:bg-slate-400 hover:text-slate-950 dark:bg-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200 dark:text-slate-400 font-medium"
+              >Быстрый старт</a
+            >
+            <a
+              href="https://speek.su"
+              class="md:text-[20px] text-[18px] transition-all self-center text-center min-w-[96px] min-h-[36px] rounded-full px-[16px] py-[4px] bg-slate-300 hover:bg-slate-400 hover:text-slate-950 dark:bg-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200 dark:text-slate-400 font-medium"
+              >Сайт</a
+            >
+          </div>
+        </div>
+        <!-- Блок конец -->
+        <!-- Блок2 начало -->
+        <div class="p-[8px] flex flex-col gap-[8px]">
+          <h2
+            class="md:text-[32px] text-[28px] font-semibold text-slate-950 dark:text-slate-200"
+          >
+            Приступая к работе
+          </h2>
+          <p
+            class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+          >
+            Для начала, рекомендуем ознакомиться с исходным кодом FrontEnd части
+            Speeksu, на нашем официальном GitHub.
+          </p>
+          <div class="flex gap-[8px] items-stretch">
+            <a
+              href="/"
+              class="md:text-[20px] text-[18px] transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+              >Быстрый старт <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Блок конец -->
+        <!-- Блок3 начало -->
+        <div class="p-[8px] flex flex-col gap-[8px]">
+          <h2
+            class="md:text-[32px] text-[28px] font-semibold text-slate-950 dark:text-slate-200"
+          >
+            Руководство
+          </h2>
+          <span class="border border-slate-700"></span>
+          <div
+            class="grid grid-cols-4 gap-[8px] justify-center items-start self-stretch"
+          >
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                Аунтификация
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                Узнайте как работает аунтификация
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Быстрый старт <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                Аунтификация
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                Узнайте как работает аунтификация
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Быстрый старт <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                Аунтификация
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                Узнайте как работает аунтификация
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Быстрый старт <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                Аунтификация
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                Узнайте как работает аунтификация
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Быстрый старт <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Блок конец -->
+        <!-- Блок3 начало -->
+        <div class="p-[8px] flex flex-col gap-[8px]">
+          <h2
+            class="md:text-[32px] text-[28px] font-semibold text-slate-950 dark:text-slate-200"
+          >
+            Ресурсы
+          </h2>
+          <span class="border border-slate-700"></span>
+          <div
+            class="grid grid-cols-4 gap-[8px] justify-center items-start self-stretch"
+          >
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                Шрифты
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                Google Fonts - Это основной наш поставшик шрифтов для месенджера
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Подробнее <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                Иконки
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                FontAwesome - Это основной наш поставшик иконок для месенджера
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Подробнее <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                TailwindCSS
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                TailwindCSS - Это фреймворк для CSS, на котором работает наш
+                месенджер
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Подробнее <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div
+              class="sm:col-span-2 md:col-span-1 col-span-4 flex flex-col justify-between items-start self-stretch"
+            >
+              <h3
+                class="md:text-[24px] text-[22px] font-semibold text-slate-950 dark:text-slate-200"
+              >
+                Speeksu API
+              </h3>
+              <p
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+              >
+                Используйте наш API для создания месенджера, так же, как и в
+                Telegram
+              </p>
+              <a
+                href="/"
+                class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+                >Подробнее <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Блок конец -->
+        <footer class="mt-[32px] px-[8px] flex flex-col gap-[32px]">
+          <div class="">
+            <p
+              class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400"
+            >
+              Нашли ошибку в документации?
+            </p>
+            <a
+              href="/"
+              class="md:text-[20px] text-[18px] w-full transition-all self-center text-emerald-500 hover:text-emerald-400 font-medium"
+              >Предложить исправление <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div>
+            <div class="float-right">
+              <a
+                href=""
+                class="float-right transition-all self-center text-center min-w-[96px] min-h-[36px] rounded-full px-[16px] py-[4px] bg-slate-300 hover:bg-slate-400 hover:text-slate-950 dark:bg-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200 dark:text-slate-400 font-medium"
+                >Далее <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <p class="md:text-[20px] text-[18px] text-slate-200">
+                Быстрый старт
+              </p>
+            </div>
+          </div>
+
+          <div class="flex border-t border-slate-700 py-[32px]">
+            <p
+              class="text-slate-600 dark:text-slate-400 md:text-[20px] text-[18px] grow"
+            >
+              © main_PROBROVOVA. Все права защищены.
+            </p>
+            <div class="flex gap-[8px]">
+              <a
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-slate-200 transition-all"
+                href="https://github.com/PROBROVOVAyt"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                class="md:text-[20px] text-[18px] text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-slate-200 transition-all"
+                href=""
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
