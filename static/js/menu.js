@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const btn = document.getElementById("menu-btn");
+  const menu_btn = document.getElementById("close-menu-btn");
   const menu = document.getElementById("menu");
-  const themeToggle = document.getElementById("theme-toggle");
 
   // Функция для скрытия меню
   function hideMenu() {
@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
   checkScreenWidth();
 
   // Обработчик клика на кнопку
+  menu_btn.addEventListener("click", function () {
+    hideMenu();
+  });
   btn.addEventListener("click", function () {
     if (menu.classList.contains("hidden")) {
       showMenu();
@@ -41,28 +44,4 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", function () {
     checkScreenWidth();
   });
-
-  // Проверка системной темы
-  function setThemeBasedOnSystem() {
-    const prefersDarkScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    if (prefersDarkScheme) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }
-
-  // Переключатель темы
-  themeToggle.addEventListener("click", function () {
-    if (document.documentElement.classList.contains("dark")) {
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.add("dark");
-    }
-  });
-
-  // Установка темы при загрузке
-  setThemeBasedOnSystem();
 });
