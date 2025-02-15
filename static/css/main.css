@@ -1,4 +1,7 @@
 /*! tailwindcss v4.0.6 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -600,9 +603,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-\[300px\] {
-    width: 300px;
-  }
   .w-full {
     width: 100%;
   }
@@ -685,10 +685,6 @@
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
-  }
-  .border-r-\[1px\] {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 1px;
   }
   .border-b-\[1px\] {
     border-bottom-style: var(--tw-border-style);
@@ -781,6 +777,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
   }
   .text-emerald-500 {
     color: var(--color-emerald-500);
@@ -997,6 +996,9 @@
       }
     }
   }
+}
+* {
+  font-family: "Noto Sans", "Noto Sans SC", "Noto Sans TC", sans-serif;
 }
 @keyframes spin {
   to {
