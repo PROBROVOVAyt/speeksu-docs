@@ -1,4 +1,22 @@
 {
+  "name": "speeksu-docs",
+  "description": "",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/main.css --watch",
+    "prod": "npx @tailwindcss/cli -i ./static/css/input.css -o ./static/css/main.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PROBROVOVAyt/speeksu-docs.git"
+  },
+  "keywords": [],
+  "author": "main PROBROVOVA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PROBROVOVAyt/speeksu-docs/issues"
+  },
+  "homepage": "https://github.com/PROBROVOVAyt/speeksu-docs",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.6",
     "tailwindcss": "^4.0.6"
